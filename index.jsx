@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useEffect, useState, StrictMode } from 'react';
+import { createRoot } from "react-dom/client";
 import { api } from './api.js';
 
 const Transactions = props => {
@@ -58,8 +58,8 @@ const Results = props => {
                 <thead>
                     <tr>
                         <th>Customer Id</th>
-                        {Array.from(data.months).map(month => {
-                            return <th>{months[month]}</th>
+                        {Array.from(data.months).map((month, index) => {
+                            return <th key={index}>{months[month]}</th>
                         })}
                         <th>Total</th>
                     </tr>
@@ -70,8 +70,8 @@ const Results = props => {
                         return (
                             <tr key={index}>
                                 <td>{customerId}</td>
-                                {Array.from(data.months).map(month => {
-                                    return <td>{customer[month] || 0}</td>
+                                {Array.from(data.months).map((month, index) => {
+                                    return <td key={index}>{customer[month] || 0}</td>
                                 })}
                                 <td>{customer['total'] || 0}</td>
                             </tr>
@@ -104,5 +104,12 @@ const App = () => {
     )
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const rootElement = document.getElementById("app");
+const root = createRoot(rootElement);
+
+root.render(
+    <StrictMode>
+        <App />
+    </StrictMode>
+);
 
