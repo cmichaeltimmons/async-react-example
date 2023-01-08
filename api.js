@@ -77,8 +77,6 @@ const calculateRewardPoints = (transactions) => {
     return { customers, months: Array.from(months), transactions }
 }
 
-
-// fake aync  time out one second api for get rewards 
 export const api = {
     getData: () => {
         return new Promise((resolve, reject) => {
