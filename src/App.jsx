@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Transactions } from './Transactions.jsx';
 import { Rewards } from './Rewards.jsx';
-import { api } from './api.js';
 import './App.css';
 
-export const App = () => {
+export const App = (props) => {
+    const { api } = props
     const [data, setData] = useState({ customers: {}, transactions: [], months: [] })
     useEffect(() => {
         async function getData() {
