@@ -7,7 +7,7 @@ export const Rewards = props => {
     return (
         <div>
             <table id="rewards-table">
-                <caption align='top'>Rewards</caption>
+                <caption>Rewards</caption>
                 <thead>
                     <tr>
                         <th>Customer Id</th>

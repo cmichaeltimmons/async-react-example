@@ -8,7 +8,7 @@ export const Transactions = props => {
         <div>
 
             <table id="transaction-table">
-                <caption align='top'>Transactions</caption>
+                <caption>Transactions</caption>
                 <thead>
                     <tr>
                         <th>Customer Id</th>
