@@ -8,9 +8,9 @@ describe('<Transactions>', () => {
         const data = {
             customers: {
                 1: {
-                    1: 100,
-                    2: 200,
-                    3: 300,
+                    '01': 100,
+                    '02': 200,
+                    '03': 300,
                     total: 600,
                 },
             },
