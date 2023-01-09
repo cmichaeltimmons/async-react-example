@@ -1,12 +1,14 @@
 import React from 'react'
+import './Transactions.css'
 
 export const Transactions = props => {
     const { data } = props
     const { transactions } = data
     return (
         <div>
-            <h1>Transactions</h1>
-            <table>
+
+            <table id="transaction-table">
+                <caption align='top'>Transactions</caption>
                 <thead>
                     <tr>
                         <th>Customer Id</th>

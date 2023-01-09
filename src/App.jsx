@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Transactions } from './Transactions.jsx';
 import { Rewards } from './Rewards.jsx';
 import { api } from './api.js';
+import './App.css';
 
 export const App = () => {
     const [data, setData] = useState({ customers: {}, transactions: [], months: [] })
@@ -17,9 +18,9 @@ export const App = () => {
     if (data.months.length === 0) return (<div>Loading...</div>)
 
     return (
-        <div>
+        <>
             <Transactions data={data} />
             <Rewards data={data} />
-        </div>
+        </>
     )
 }

@@ -1,12 +1,13 @@
 import React from 'react'
 import { mapMonths } from './utils.js'
+import './Rewards.css'
 
 export const Rewards = props => {
     const { data } = props
     return (
         <div>
-            <h1>Reward Points</h1>
-            <table>
+            <table id="rewards-table">
+                <caption align='top'>Rewards</caption>
                 <thead>
                     <tr>
                         <th>Customer Id</th>
