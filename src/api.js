@@ -1,4 +1,4 @@
-const transactions = [
+export const transactions = [
     {
         name: 'Ball',
         price: 110,
@@ -59,7 +59,7 @@ const convertToPoints = (price) => {
     }
 }
 
-const calculateRewardPoints = (transactions) => {
+export const calculateRewardPoints = (transactions) => {
     const customers = {}
     const months = new Set()
     transactions.forEach(transaction => {
