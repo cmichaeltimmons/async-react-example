@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Transactions } from './Transactions.jsx';
-import { Results } from './Results.jsx';
+import { Rewards } from './Rewards.jsx';
 import { api } from './api.js';
 
 export const App = () => {
@@ -19,7 +19,7 @@ export const App = () => {
     return (
         <div>
             <Transactions data={data} />
-            <Results data={data} />
+            <Rewards data={data} />
         </div>
     )
 }

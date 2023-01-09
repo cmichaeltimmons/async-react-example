@@ -1,7 +1,7 @@
 import React from 'react'
 import { mapMonths } from './utils.js'
 
-export const Results = props => {
+export const Rewards = props => {
     const { data } = props
     return (
         <div>
