@@ -36,8 +36,3 @@
 #rewards-table tbody tr:last-of-type {
     border-bottom: 2px solid rebeccapurple;
 }
-
-#rewards-table tbody tr.active-row {
-    font-weight: bold;
-    color: rebeccapurple;
-}

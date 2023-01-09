@@ -36,8 +36,3 @@
 #transaction-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
-
-#transaction-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
