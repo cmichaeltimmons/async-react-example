@@ -6,7 +6,6 @@ export const Transactions = props => {
     const { transactions } = data
     return (
         <div>
-
             <table id="transaction-table">
                 <caption>Transactions</caption>
                 <thead>
