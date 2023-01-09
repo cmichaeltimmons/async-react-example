@@ -44,11 +44,7 @@ describe('<Rewards>', () => {
             months: ['01', '02', '03'],
         };
 
-
-        // get all by classname .rewards-row elements
         const { getAllByRole } = render(<Rewards data={data} />);
-
-
 
         // expect 2 rows: header and 2 customer
         expect(getAllByRole('row')).to.have.length(3);
