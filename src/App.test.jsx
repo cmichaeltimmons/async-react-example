@@ -5,7 +5,7 @@ import { App } from './App';
 import { stub } from 'sinon';
 
 describe('<App>', () => {
-    it('fetches data on once', () => {
+    it('fetches data once', () => {
         const api = {
             getData: stub().resolves({
                 customers: {},
