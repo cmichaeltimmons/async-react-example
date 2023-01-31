@@ -1,47 +1,55 @@
 export const transactions = [
     {
+        id: 1,
         name: 'Ball',
         price: 110,
         date: '2020-01-01',
         customerId: 1
     },
     {
+        id: 2,
         name: 'Shoes',
         price: 20,
         date: '2020-01-15',
         customerId: 3
     },
     {
+        id: 3,
         name: 'Shirt',
         price: 70,
         date: '2020-01-16',
         customerId: 2
     },
     {
+        id: 4,
         name: 'Pants',
         price: 100,
         date: '2020-02-03',
         customerId: 2
     },
     {
+        id: 5,
         name: 'Hat',
         price: 40,
         date: '2020-02-15',
         customerId: 2
     },
     {
+        id: 6,
         name: 'Socks',
         price: 80,
         date: '2020-03-01',
         customerId: 3
     },
     {
+        id: 7,
         name: 'Gloves',
         price: 70,
         date: '2020-03-20',
         customerId: 3
     },
     {
+        id: 8,
         name: 'Sweater',
         price: 100,
         date: '2020-03-25',

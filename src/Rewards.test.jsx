@@ -50,4 +50,33 @@ describe('<Rewards>', () => {
         expect(getAllByRole('row')).to.have.length(3);
     })
 
+    it('renders all cell data', () => {
+        const data = {
+            customers: {
+                1: {
+                    '01': 100,
+                    '02': 200,
+                    '03': 300,
+                    total: 600,
+                },
+            },
+            transactions: [],
+            months: ['01', '02', '03'],
+        };
+
+        const { getAllByRole } = render(<Rewards data={data} />);
+
+        const tableRows = getAllByRole('row').slice(1);
+
+        // it renders the customer id
+        expect(tableRows[0].cells[0].textContent).to.equal('1');
+        // it renders the month data
+        expect(tableRows[0].cells[1].textContent).to.equal('100');
+        expect(tableRows[0].cells[2].textContent).to.equal('200');
+        expect(tableRows[0].cells[3].textContent).to.equal('300');
+        // it renders the total
+        expect(tableRows[0].cells[4].textContent).to.equal('600');
+    })
+
+
 });

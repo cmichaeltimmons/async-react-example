@@ -10,6 +10,7 @@ export const Transactions = props => {
                 <caption>Transactions</caption>
                 <thead>
                     <tr>
+                        <th>Transaction Id</th>
                         <th>Customer Id</th>
                         <th>Name</th>
                         <th>Price</th>
@@ -17,9 +18,10 @@ export const Transactions = props => {
                     </tr>
                 </thead>
                 <tbody>
-                    {transactions.map((transaction, index) => {
+                    {transactions.map((transaction) => {
                         return (
-                            <tr key={index}>
+                            <tr key={transaction.id}>
+                                <td>{transaction.id}</td>
                                 <td>{transaction.customerId}</td>
                                 <td>{transaction.name}</td>
                                 <td>{transaction.price}</td>
