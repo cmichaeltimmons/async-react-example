@@ -43,7 +43,7 @@ describe('<Transactions>', () => {
         expect(getAllByRole('row')).to.have.length(4);
     })
 
-    it('renders all cell dat', () => {
+    it('renders all cell data', () => {
         const data = {
             customers: {
                 1: {
